@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/*HEADER*/
+
+header{
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*TITLE*/
+
+h1{
+    margin:0;
+    padding: 7px;
+    font-size: 30px;
+    color: white;
+}
+
+span{
+    color: red;
+}
+
+
+main h2 {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    text-shadow: red 5px 2px;
+}
+
+main h3{
+    position: relative;
+    bottom: 140px;
+    left: 80px;
+    z-index: 1;
+
+}
+
+
+.mixtape h3{
+    border-radius: 5px;
+    width: 130px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    background-color: red;
+
+}
+
+
+/*LISTES + liens*/
+
+ul li{
+    margin-top:-5px;
+    margin-right: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+
+}
+
+main{
+    padding: 1px;
+    height: 85vh;
+    background-image: url('images/clip1.jpg');
+   background-position: center;
+   background-size: cover;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: white;
+    color: red;
+}
+
+
+/* Div contenant l'image de la mixtape + h2 / utilisation flexbox*/ 
+.mixtape{
+    
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mixtape img{
+    border: 1px solid red;
+    box-shadow: tomato 5px 12px 5px;
+}
+
+
+/*FOOTER*/
+
+footer{
+
+    height: 7vh;
+    background-color: black;
+
+}
+
+footer  p{
+    padding-top: 15px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width : 766px){
+
+    body{
+        box-sizing: border-box;
+    }
+
+    h1{
+        padding-top: 15px;
+        font-size: 25px;
+    }
+
+    .mixtape h2{ /*Disparition du titre */
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    header li {
+        font-size:25px;
+        margin: 2px 
+    }
+
+    header ul{
+        margin-left: -15px;
+    }
+
+    footer p{
+        padding: 0;
+    }
+
+    
+    
+}
+
