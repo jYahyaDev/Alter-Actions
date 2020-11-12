@@ -133,6 +133,13 @@ footer  p{
         font-size: 25px;
     }
 
+  
+    .cover{
+      margin-top: 120px;
+      
+      
+    }
+
     .mixtape h2{ /*Disparition du titre */
         display: none;
     }
